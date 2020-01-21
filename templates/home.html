@@ -1,0 +1,47 @@
+<!-- add bootstrap_base.html file properties here -->
+{% extends 'bootstrap_base.html' %}
+{% block content %}
+<!-- head -->
+  <head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+<!-- css style section -->
+      <style>
+      .tableFixHead { overflow-y: auto; float:left; height: 300px; width:230px; }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        vertical-align: top;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 10px 10px 10px 10px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+  </head>
+<!-- jumbotron -->
+	<div class='container'>
+		<div class="jumbotron text-center">
+    		<h2>DEBBIE Search</h2>
+		</div>
+	</div>
+<!-- Search box, buttons, text -->
+  <div class="container">
+    <form action="{{url_for('analyze')}}" method="POST" id="myForm">
+  	 <h5>Using the text box below, you can search the DEBBIE Database by terminology (e.g. mesh, polydioxanone, tissue engineering).</h5><textarea name="rawtext" rows="1" cols="1" class="form-control"></textarea>
+      <br>
+  	 <input type="submit" name="" value="Submit" class="btn btn-primary">
+  	 <a href="{{url_for('index')}}" type="button" class="btn btn-danger">Reset</a>
+    </form>
+  </div>
+  <br>
+  <br>
+<!-- endblock -->
+{% endblock %}
