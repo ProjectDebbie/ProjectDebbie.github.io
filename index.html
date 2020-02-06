@@ -8,15 +8,18 @@
         ul {
           flex-wrap: wrap;
           display: flex;
-          font-family: Tahoma, Geneva, sans-serif;
+          font-family: "ECSquareSansProRegular", Verdana, Geneva, sans-serif;
         }
         ul li {
           flex: 1 0 25%;
-          font-family: Tahoma, Geneva, sans-serif;
+          font-family: "ECSquareSansProRegular", Verdana, Geneva, sans-serif;
+        }
+        p {
+          font-family: "ECSquareSansProRegular", Verdana, Geneva, sans-serif;
         }
 </style>
 <body>
-
+<div class="total_container">
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
@@ -45,7 +48,7 @@
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-padding-32">About</h3>
+    <h2 class="w3-border-bottom w3-padding-32">About</h2>
     <p>The Database of Experimental Biomaterials and their Biological Effect
         (DEBBIE) is a new open access tool which will enable a more efficient
         and evidence-based selection of materials for medical applications. The
@@ -60,7 +63,7 @@
 
     <!-- Database Section -->
   <div class="w3-container w3-padding-32 w3-light-grey" id="database">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-32">Database</h3>
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-32">Database</h2>
     <p>The Database of Experimental Biomaterials and their Biological Effect
         (DEBBIE) is a new open access tool which will enable a more efficient
         and evidence-based selection of materials for medical applications. The
@@ -93,7 +96,7 @@
 
   <!-- Ontology Section -->
   <div class="w3-container w3-padding-32" id="ontology">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-32">Ontology</h3>
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-32">Ontology</h2>
     <p> <a href="https://bioportal.bioontology.org/ontologies/DEB">The Devices, Experimental scaffolds and Biomaterials Ontology (DEB)</a> was
     developed to facilitate information curation in the area of medical
     devices, experimental scaffolds and biomaterials. The ontology was
@@ -108,13 +111,13 @@
         <div class="w3-row-padding w3-light-grey">
           <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
             <div class="w3-display-container">
-              <img src="images/static_ontology.png" alt="static" style="width:500px;padding-left:15px;padding-top: 15px">
+              <a href="http://owlgred.lumii.lv/online_visualization/pbqt"><img src="images/static_ontology.png" alt="static" style="width:500px;padding-left:15px;padding-top: 15px"></a>
               <center><p>Static Visualization on <a href="http://owlgred.lumii.lv/online_visualization/pbqt">OWLGrEd</a></p></center>
             </div>
           </div>
           <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
             <div class="w3-display-container">
-              <img src="images/dynamic_visualization.png" alt="dynamic" style="width:600px; filter:brightness(110%);padding-right:15px;padding-top: 15px">
+              <a href="http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/20191001/DEB_20191001.owl"><img src="images/dynamic_visualization.png" alt="dynamic" style="width:600px; filter:brightness(110%);padding-right:15px;padding-top: 15px"></a>
               <center><p>Dynamic Visualization on <a href="http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/20191001/DEB_20191001.owl">WebVOWL</a></p></center>
             </div>
           </div>
@@ -124,7 +127,7 @@
 
 <!-- Research Section -->
 <div class="w3-container w3-padding-32" id="research">
-    <h3 class="w3-border-bottom w3-padding-32">Research</h3>
+    <h2 class="w3-border-bottom w3-padding-32">Research</h2>
     <div class="w3-row-padding">
       <div class="w3-col l3 m3 w3-margin-bottom">
         <a href="https://towardsdatascience.com/could-data-analysis-prevent-unnecessary-suffering-lessons-to-learn-from-the-vaginal-mesh-scandal-793086d6bbcc"><img src="images/osnat_medium_article1.png" alt="osnat_medium_article1" style="width:60%"></a>
@@ -147,7 +150,7 @@
 
 <!-- Team Section -->
   <div class="w3-container w3-padding-32 w3-light-grey" id="team">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-32">Team</h3>
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-32">Team</h2>
   <div class="w3-row-padding">
     <div class="w3-col l3 m3 w3-margin-bottom">
       <img src="images/osnat_hakimi.jpg" alt="Osnat" style="width:100%">
@@ -189,15 +192,15 @@
 <!-- Footer -->
 <footer class="w3-container w3-padding-16 w3-white">
   <div class="w3-row-padding w3-col m4 w3-right">
-    <img src="images/bsc.png" alt="marie" style="width:70%">
+    <a href="https://www.bsc.es/es"><img src="images/bsc.png" alt="marie" style="width:70%"></a>
   </div>
 
     <div class="w3-row-padding w3-col m4">
-      <center><img src="images/marie_curie.png" alt="marie" style="width:30%"></center>
+      <a href="https://ec.europa.eu/research/mariecurieactions/"><center><img src="images/marie_curie.png" alt="marie" style="width:30%"></center></a>
     </div>
 
     <div class="w3-row-padding w3-col m4 w3-left">
-      <img src="images/upc.png" alt="upc" style="width:70%">
+      <a href="https://biomaterials.upc.edu/en"><img src="images/upc.png" alt="upc" style="width:70%"></a>
     </div>
 </footer>
 
