@@ -17,18 +17,18 @@
         p {
           font-family: "ECSquareSansProRegular", Verdana, Geneva, sans-serif;
         }
+
 </style>
 <body>
-<div class="total_container">
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <img src="images/flyer.png" width="60" height="60"></a>
     <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right">
       <a href="#about" class="w3-bar-item w3-button w3-padding-16">About</a>
-      <a href="#database" class="w3-bar-item w3-button w3-padding-16">Database</a>
       <a href="#ontology" class="w3-bar-item w3-button w3-padding-16">Ontology</a>
+      <a href="#database" class="w3-bar-item w3-button w3-padding-16">Database</a>
       <a href="#research" class="w3-bar-item w3-button w3-padding-16">Research</a>
       <a href="#team" class="w3-bar-item w3-button w3-padding-16">Team</a>
     </div>
@@ -36,19 +36,16 @@
 </div>
 <br>
 <!-- Header -->
-<br>
-<br>
-<br>
-<header class="w3-display-container w3-content w3-wide w3-center" style="max-width:1245px;" id="home">
-  <img class="w3-image w3-center" src="images/DEBBIE_banner.png" alt="Debbie_img" width="1500">
+<header class="w3-display-container w3-content w3-wide w3-center" style="max-width:1245px; min-width:1245px;" id="home">
+  <img class="w3-image w3-center" style="border-radius: 25px;" src="images/DEBBIE_banner.png" alt="Debbie_img" width="1500">
 </header>
 
 <!-- Page content max-width:1564px -->
-<div class="w3-content w3-padding" style="max-width:1300px">
+<div class="w3-content w3-padding w3-white" style="max-width:1300px; min-width: 1300px;">
 
   <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h2 class="w3-border-bottom w3-padding-32">About</h2>
+  <div class="w3-container w3-padding-16 w3-white" id="about" >
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
     <p>The Database of Experimental Biomaterials and their Biological Effect
         (DEBBIE) is a new open access tool which will enable a more efficient
         and evidence-based selection of materials for medical applications. The
@@ -60,10 +57,40 @@
     <br>
     <center><img class="w3-image w3-center w3-padding-16" src="images/Biocuration_pipeline_20200123.png" alt="Pipeline" width="650" height="300"></center>
   </div>
-
+  <br>
+   <!-- Ontology Section -->
+  <div class="w3-container w3-padding-16" style="border-radius: 25px; background-color: #F7F7F7;" id="ontology">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16"">Ontology</h2>
+    <p> <a href="https://bioportal.bioontology.org/ontologies/DEB">The Devices, Experimental scaffolds and Biomaterials Ontology (DEB)</a> was
+    developed to facilitate information curation in the area of medical
+    devices, experimental scaffolds and biomaterials. The ontology was
+    designed to complement existing medical vocabularies, with emphasis on
+    material processing, structures and features associated with
+    biomaterials and experimental scaffolds. It was developed using text
+    mining tool and a systematic approach.
+        <br>
+        <br>
+        <p>In addition, below you can find the static and dynamic visualization of the ontology.</p>
+        <br>
+        <div class="w3-row-padding">
+          <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
+            <div class="w3-display-container">
+              <a href="http://owlgred.lumii.lv/online_visualization/pbqt"><img src="images/static_ontology.png" alt="static" style="width:500px;padding-left:15px;padding-top: 15px"></a>
+              <center><p>Static Visualization on <a href="http://owlgred.lumii.lv/online_visualization/pbqt">OWLGrEd</a></p></center>
+            </div>
+          </div>
+          <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
+            <div class="w3-display-container">
+              <a href="http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/20191001/DEB_20191001.owl"><img src="images/dynamic_visualization.png" alt="dynamic" style="width:600px; filter:brightness(110%);padding-right:15px;padding-top: 15px"></a>
+              <center><p>Dynamic Visualization on <a href="http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/20191001/DEB_20191001.owl">WebVOWL</a></p></center>
+            </div>
+          </div>
+        </div>
+    </p>
+  </div>
     <!-- Database Section -->
-  <div class="w3-container w3-padding-32 w3-light-grey" id="database">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-32">Database</h2>
+  <div class="w3-container w3-padding-16" id="database">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Database</h2>
     <p>The Database of Experimental Biomaterials and their Biological Effect
         (DEBBIE) is a new open access tool which will enable a more efficient
         and evidence-based selection of materials for medical applications. The
@@ -93,89 +120,60 @@
     <center><button style="background-color:#3995F9;font-size:20px;color:white; padding: 10px 32px;
   text-align: center;"><a href="under_construction.html">DEBBIE Database</a></button></center>
   </div>
-
-  <!-- Ontology Section -->
-  <div class="w3-container w3-padding-32" id="ontology">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-32">Ontology</h2>
-    <p> <a href="https://bioportal.bioontology.org/ontologies/DEB">The Devices, Experimental scaffolds and Biomaterials Ontology (DEB)</a> was
-    developed to facilitate information curation in the area of medical
-    devices, experimental scaffolds and biomaterials. The ontology was
-    designed to complement existing medical vocabularies, with emphasis on
-    material processing, structures and features associated with
-    biomaterials and experimental scaffolds. It was developed using text
-    mining tool and a systematic approach.
-        <br>
-        <br>
-        <p>In addition, below you can find the static and dynamic visualization of the ontology.</p>
-        <br>
-        <div class="w3-row-padding w3-light-grey">
-          <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-            <div class="w3-display-container">
-              <a href="http://owlgred.lumii.lv/online_visualization/pbqt"><img src="images/static_ontology.png" alt="static" style="width:500px;padding-left:15px;padding-top: 15px"></a>
-              <center><p>Static Visualization on <a href="http://owlgred.lumii.lv/online_visualization/pbqt">OWLGrEd</a></p></center>
-            </div>
-          </div>
-          <div class="w3-col l6 m6 w3-margin-bottom w3-margin-top">
-            <div class="w3-display-container">
-              <a href="http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/20191001/DEB_20191001.owl"><img src="images/dynamic_visualization.png" alt="dynamic" style="width:600px; filter:brightness(110%);padding-right:15px;padding-top: 15px"></a>
-              <center><p>Dynamic Visualization on <a href="http://visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/ProjectDebbie/Ontology_DEB/20191001/DEB_20191001.owl">WebVOWL</a></p></center>
-            </div>
-          </div>
-        </div>
-    </p>
-  </div>
-
+  <br>
+  <br>
+ 
 <!-- Research Section -->
-<div class="w3-container w3-padding-32" id="research">
-    <h2 class="w3-border-bottom w3-padding-32">Research</h2>
+<div class="w3-container w3-padding-16" style="border-radius: 25px; background-color: #F7F7F7;" id="research">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Research</h2>
     <div class="w3-row-padding">
-      <div class="w3-col l3 m3 w3-margin-bottom">
+      <div class="w3-col l3 s3 m3 w3-margin-bottom">
         <a href="https://towardsdatascience.com/could-data-analysis-prevent-unnecessary-suffering-lessons-to-learn-from-the-vaginal-mesh-scandal-793086d6bbcc"><img src="images/osnat_medium_article1.png" alt="osnat_medium_article1" style="width:60%"></a>
         <p><a href="https://towardsdatascience.com/could-data-analysis-prevent-unnecessary-suffering-lessons-to-learn-from-the-vaginal-mesh-scandal-793086d6bbcc">Could data analysis prevent unnecessary suffering?</a></p>
       </div>
     </div>
     <div class="w3-row-padding">
-      <div class="w3-col l3 m3 w3-margin-bottom">
+      <div class="w3-col l3 m3 s3 w3-margin-bottom">
       </div>
     </div>
     <div class="w3-row-padding">
-      <div class="w3-col l3 m3 w3-margin-bottom">
+      <div class="w3-col l3 m3 s3 w3-margin-bottom">
       </div>
     </div>
     <div class="w3-row-padding">
-      <div class="w3-col l3 m3 w3-margin-bottom">
+      <div class="w3-col l3 m3 s3 w3-margin-bottom">
       </div>
     </div>
 </div>
 
 <!-- Team Section -->
-  <div class="w3-container w3-padding-32 w3-light-grey" id="team">
-    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-32">Team</h2>
+  <div class="w3-container w3-padding-16" id="team">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Team</h2>
   <div class="w3-row-padding">
-    <div class="w3-col l3 m3 w3-margin-bottom">
-      <img src="images/osnat_hakimi.jpg" alt="Osnat" style="width:100%">
+    <div class="w3-col l3 m3 s3 w3-margin-bottom w3-center">
+      <img src="images/osnat_hakimi.jpg" alt="Osnat" style="width:70%">
       <h3>Osnat Hakimi</h3>
       <p class="w3-opacity">Project Leader</p>
       <p>Osnat is a Marie Curie Individual Fellow at the Universitat Politècnica de Catalunya and a visitor to the Barcelona Supercomputing Center</p>
       <!--<p><button class="w3-button w3-blue w3-block">Contact</button></p> -->
       <p class="w3-opacity">o</p>
     </div>
-    <div class="w3-col l3 m3 w3-margin-bottom">
-      <img src="images/austin.jpg" alt="austin" style="width:100%">
+    <div class="w3-col l3 m3 s3 w3-margin-bottom w3-center">
+      <img src="images/austin.jpg" alt="austin" style="width:70%">
       <h3>Austin McKitrick</h3>
       <p class="w3-opacity">Research Assistant</p>
       <p>Austin is a Masters Student in Bioinformatics for Health Sciences at Universitat Pompeu Fabra (UPF) in Barcelona.</p>
       <p class="w3-opacity"></p>
     </div>
-    <div class="w3-col l3 m3 w3-margin-bottom">
-      <img src="images/C Fuenteslopez (1).jpg" alt="carla" style="width:97%">
+    <div class="w3-col l3 m3 s3 w3-margin-bottom w3-center">
+      <img src="images/C Fuenteslopez (1).jpg" alt="carla" style="width:68%">
       <h3>Carla V. Fuenteslópez</h3>
       <p class="w3-opacity">Collaborator</p>
       <p>Carla is a DPhil Student studying Engineering Science, with a focus in nanomedicine and tissue engineering, at the University of Oxford.</p>
       <p class="w3-opacity"></p>
     </div>
-    <div class="w3-col l3 m3 w3-margin-bottom">
-      <img src="images/javi.jpeg" alt="javi" style="width:96%">
+    <div class="w3-col l3 m3 s3 w3-margin-bottom w3-center">
+      <img src="images/javi.jpeg" alt="javi" style="width:68%">
       <h3>Javier Corvi</h3>
       <p class="w3-opacity">Collaborator</p>
       <p>Javi is a Research Engineer at the Barcelona Supercomputing Center.</p>
@@ -186,24 +184,22 @@
 
 
 <!-- End page content -->
-</div>
 
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-16 w3-white">
-  <div class="w3-row-padding w3-col m4 w3-right">
-    <a href="https://www.bsc.es/es"><img src="images/bsc.png" alt="marie" style="width:70%"></a>
+  <div class="w3-row-padding w3-col l4 m4 s4 w3-right" style="padding-top: 40px;">
+    <a href="https://www.bsc.es/es"><img src="images/bsc.png" alt="marie" style="width:80%"></a>
   </div>
 
-    <div class="w3-row-padding w3-col m4">
-      <a href="https://ec.europa.eu/research/mariecurieactions/"><center><img src="images/marie_curie.png" alt="marie" style="width:30%"></center></a>
+    <div class="w3-row-padding w3-col l4 m4 s4">
+      <a href="https://ec.europa.eu/research/mariecurieactions/"><center><img src="images/marie_curie.png" alt="marie" style="width:46%"></center></a>
     </div>
 
-    <div class="w3-row-padding w3-col m4 w3-left">
-      <a href="https://biomaterials.upc.edu/en"><img src="images/upc.png" alt="upc" style="width:70%"></a>
+    <div class="w3-row-padding w3-col l4 m4 s4 w3-left" style="padding-top: 40px;" >
+      <a href="https://biomaterials.upc.edu/en"><img src="images/upc.png" alt="upc" style="width:80%"></a>
     </div>
 </footer>
 
 </body>
 </html>
-
