@@ -11,7 +11,7 @@
           font-family: "ECSquareSansProRegular", Verdana, Geneva, sans-serif;
         }
         ul li {
-          flex: 1 0 25%;
+          flex: 1 0 33%;
           font-family: "ECSquareSansProRegular", Verdana, Geneva, sans-serif;
         }
         p {
@@ -102,24 +102,29 @@
         as well as generate a comprehensive map of research activity and findings.
     </p>
       <p>The DEBBIE Database contains annotations of PubMed abstracts in field of biomaterials, including implants, medical devices, and exeprimental scaffolds. Each annotation is labelled by one or more of the following categories:</p>
-          <ul class="list">
-          <li>Biomaterial</li>
-          <li>Structure</li>
-          <li>Medical Application</li>
-          <li>Manufactured Object</li>
-          <li>Adverse Effects</li>
-
-          <li>Manufactured Object Features</li>
-          <li>Biologically Active Substance</li>
-          <li>Tissue</li>
-          <li>Cell</li>
-          <li>Study Type</li>
-
-          <li>Effect on Biological System</li>
-          <li>Associated Biological Process</li>
-          <li>Research Technique</li>
-          <li>Animal Type Model</li>
-        </ul>
+      <!-- list of superclasses -->
+      <ul class="list" style="padding-left: 150px;">
+      <!--row 1 -->
+        <li><a href="" data-toggle="tooltip" title="A non-drug raw material or substance suitable for inclusion in systems which augment or replace the function of bodily tissues or organs">Biomaterial</a></li>
+        <li><a href="" data-toggle="tooltip" title="Intended use, function or outcome of the manufactured object">Medical Application</a></li>
+        <li><a href="" data-toggle="tooltip" title="The study set up, such as in vitro, in vivo, or clinical">Study Type</a></li>
+      <!--row 2 -->
+        <li><a href="" data-toggle="tooltip" title="A physical object created by hand or machine">Manufactured Object</a></li>
+        <li><a href="" data-toggle="tooltip" title="A cellular or biological process that the manufactured object is designed to cause or support, or is measured to affect">Associated Biological Process</a></li>
+        <li><a href="" data-toggle="tooltip" title="A tissue or an organ mentioned in the study as the target or test system for the biomaterial object or medical device">Tissue Type</a></li>
+      <!--row 3 -->
+        <li><a href="" data-toggle="tooltip" title="The structure, form or texture associated with a manufactured object or its components">Structure</a></li>
+        <li><a href="" data-toggle="tooltip" title="Biological effect associated with manufactured object in a specific test system (cells, tissue or organism">Effect on Biological System</a></li>
+        <li><a href="" data-toggle="tooltip" title="The reported cell line or primary cell type">Cell Type</a></li>
+      <!--row 4 -->
+        <li><a href="" data-toggle="tooltip" title="A planned process which results in physical changes in a specified input material">Material Processing</a></li>
+        <li><a href="" data-toggle="tooltip" title="An unfavorable or unintended disease, sign, or symptom (including an abnormal laboratory finding) that is temporally associated with the use of a medical device or biomaterial">Adverse Effects</a></li>
+        <li><a href="" data-toggle="tooltip" title="The species and /or breed of animal used in the study">Animal Model</a></li>
+      <!--row 5 -->
+        <li><a href="" data-toggle="tooltip" title="Characteristics inherent or given during processing to a manufactured object or its component">Manufactured Object Features</a></li>
+        <li><a href="" data-toggle="tooltip" title="Substance, often a peptide or protein included in a manufactured object in order to impart a biological activity">Biologically Active Substance</a></li>
+        <li><a href="" data-toggle="tooltip" title="The reported laboratory technique used in an experimental study">Research Technique</a></li>
+      </ul>
     <br>
     <center><button style="background-color:#3995F9;font-size:20px;color:white; padding: 10px 32px;
   text-align: center;"><a href="http://debbie.bsc.es/search/">DEBBIE Database</a></button></center>
