@@ -32,7 +32,6 @@
       <a href="#" class="w3-bar-item w3-button w3-padding-16">Documentation</a>
       <a href="#research" class="w3-bar-item w3-button w3-padding-16">Research</a>
       <a href="#team" class="w3-bar-item w3-button w3-padding-16">Team</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-16">Contact</a>
     </div>
   </div>
 </div>
@@ -43,8 +42,19 @@
 </header>
 
 <!-- Page content max-width:1564px -->
-<div class="w3-content w3-padding w3-white w3-center" style="max-width:1300px; min-width: 1300px;">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-hl5Zv8GBuYweOgsUEXFnN3HFc-w8zDNQbmw7ntYp9loltw/viewform?embedded=true" width="800" height="1594" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<div class="w3-content w3-padding w3-white" style="max-width:1300px; min-width: 1300px;">
+<h2>Send e-mail to someone@example.com:</h2>
+
+<form action="mailto:austin.mckitrick01@estudiant.upf.edu" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
   
 </div>
 
