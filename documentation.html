@@ -70,7 +70,7 @@
     <br>
     <center><img class="w3-image w3-center" src="images/annotation_example.png" alt="Pipeline" width="900" height="450"></center>  
   </div>
-      <!-- quick start Section -->
+<!-- quick start Section -->
   <div class="w3-container w3-padding-16 w3-white" id="about" >
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quick Start</h2>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Annoation Categories</h3>
@@ -174,6 +174,74 @@
           <li><a href="https://bioportal.bioontology.org/ontologies/PREMEDONTO">Precision Medicine Ontology (PREMEDONTO)</a></li>
       </ul>
     <br>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Individual Pipeline Components and Databases</h3>
+    <table class="w3-table w3-bordered w3-border w3-centered w3-striped">
+    <tr>
+      <th>Name</th>
+      <th>Brief Description</th>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/pubmed_retrieval">PubMed Retrieval Tool</a></td>
+      <td>Takes a desired time frame and retreives PMID, title, abstract, and publication date (month and year) of all records archived by PubMed over that period.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/pubmed_standardization">PubMed Standardization Tool</a></td>
+      <td>Takes a PubMed abstract collection in XML format stored in a working directory and standardizes the content, generating an individual plain text file for each abstract.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/gold_standard_set">Gold Standard Literature Set</a></td>
+      <td>The gold standard set is a list of PMIDs for abstracts selected to represent the biomaterials literature, with focus on biological evaluation of biomaterials and biocompatibility.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/background_set">Background Literature Set</a></td>
+      <td>The backgroud set is a list of PMIDs representing non-biomaterials abstracts for the purpose of relevance classification.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/Classifier">Classifier</a></td>
+      <td>This component performs binary classification of abstracts to determine if they are relevant or not relevant to the field of biomaterials.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/owl_to_dict">OWL2DICT Tool</a></td>
+      <td>Maps out the entire OWL file to retrieve all child classes found within the selected categories as terms, each term’s class memberships, as well as any associated synonyms and properties.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/owl_to_dict/blob/master/owl2dict_light.py">OWL2DICT-lite Tool</a></td>
+      <td>A simpler implementation of owlready2. It retrieves all classes (but no properties) for given ancestors from an .owl ontology provided locally.</td>
+    </tr>
+    <tr>
+      <td><a href="https://gitlab.bsc.es/inb/text-mining/generic-tools/nlp-standard-preprocessing">NLP Standard Preprocessing Tool</a></td>
+      <td>This component uses the Stanford CoreNLP for sentence splitting, tokenization, part of speech (POS), etc.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/debbie_umls_annotations">UMLS Annotator</a></td>
+      <td>This tool uses designated UMLS terminologies to make annotations.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/Biomaterials_annotator">Biomaterial Annotator</a></td>
+      <td>The biomaterials annotator is a lexical resource for performing annotations on the biomaterials literature</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/gate_to_json">GATE-TO-JSON Tool</a></td>
+      <td>This component exports debbie annotations in XML GATE format to JSON format.</td>
+    </tr>
+    <tr>
+      <td><a href="https://gitlab.bsc.es/inb/text-mining/generic-tools/import-json-to-mongo">Import JSON-TO-MONGO Tool</a></td>
+      <td>This component inserts and pushes JSON files into a designated MongoDB.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ProjectDebbie/DEBBIE_pipeline">Complete Pipeline Tool</a></td>
+      <td>The automated pipeline retrieves biomaterials abstracts from PubMed, annotates them using multiple lexical assets, and deposits the annotated abstracts in a MongoDB.</td>
+    </tr>
+    <tr>
+      <td>DEBBIE User Interface</td>
+      <td>This repository contains the individual HTML templates, the Python Flask application, and the REST API application.</td>
+    </tr>
+    <tr>
+      <td>DEBBIE External Feedback Database</td>
+      <td>This database contains user feedback to the DEBBIE User Interface questionnaire.</td>
+    </tr>
+    </table>
+    <br>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Citing DEBBIE</h3>
     <p>The Database of Experimental Biomaterials and their Biological Effect (DEBBIE) is an open access database of 
             biomaterials, implants and medical devices automatically curated from the scientific literature. DEBBIE 
@@ -182,7 +250,6 @@
             medical applications.
     </p>
   </div>
-
 <!-- End of overall container below -->
 </div>
 <!-- End page content -->
