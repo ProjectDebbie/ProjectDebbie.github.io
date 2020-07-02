@@ -57,7 +57,7 @@
   <!-- what is the debbie pipeline? Section -->
   <div class="w3-container w3-padding-16 w3-white" id="about" >
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">What is the DEBBIE pipeline?</h2>
-    <p>Powered by software container technology (e.g. Docker) and a workflow manager (e.g. Nextflow), the DEBBIE pipeline <b>automatically and continuously</b> retrieves research abstracts, filters them according to relevancy, annotates them using selected terminologies and ontologies, and stores the information within a document-oriented database named the Database of Experimental Biomaterials and their Biological Effect (DEBBIE).
+    <p>Powered by software container technology (Docker) and a workflow manager (Nextflow), the DEBBIE pipeline <b>automatically and continuously</b> retrieves research abstracts, filters them according to relevance using a supervised classifier, annotates concepts using pre-configured lexical resources, and stores the information within a document-oriented database named the Database of Experimental Biomaterials and their Biological Effect (DEBBIE).
     </p>
     <br>
     <center><img class="w3-image w3-center" src="images/debbie_pipeline_overview.png" alt="Pipeline" width="900" height="450"></center>
@@ -65,10 +65,10 @@
     <!-- what are annotations Section -->
   <div class="w3-container w3-padding-16 w3-white" id="about" >
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">What are annotations?</h2>
-    <p>Text annotation is a popular Natural Language Processing (NLP) technique that aims to extract relevant concepts hidden within large collections of textual data through computational approaches. For DEBBIE, annotations were performed using selected ontologies/terminologies and made use of the <a href="https://gate.ac.uk/">General Architecture of Text Engineering (GATE)</a> software and the <a href="https://stanfordnlp.github.io/CoreNLP/">Stanford Core Natural Language Processing (CoreNLP)</a> framework.
+    <p>Automated text annotation is a Natural Language Processing (NLP) technique that identifies and extracts relevant concepts hidden within large collections of textual data through computational approaches. In DEBBIE, annotations are performed using the <b>Biomaterials Annotator</b>, an instrument combining several open lexical resource and built using the <a href="https://gate.ac.uk/">General Architecture of Text Engineering (GATE)</a> software and the <a href="https://stanfordnlp.github.io/CoreNLP/">Stanford Core Natural Language Processing (CoreNLP)</a> framework. Below is an example of an annotated abstract in GATE, with identified terms labeled with their respective categories.
     </p>
     <br>
-    <center><img class="w3-image w3-center" src="images/annotation_example.png" alt="Pipeline" width="900" height="450"></center>  
+    <center><img class="w3-image w3-center" src="images/annotation_example.png" alt="Pipeline" width="900" height="450"></center>
   </div>
 <!-- quick start Section -->
   <div class="w3-container w3-padding-16 w3-white" id="about" >
@@ -244,10 +244,10 @@
     </table>
     <br>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Citing DEBBIE</h3>
-    <p>The Database of Experimental Biomaterials and their Biological Effect (DEBBIE) is an open access database of 
-            biomaterials, implants and medical devices automatically curated from the scientific literature. DEBBIE 
-            was designed to facilitate a more efficient access to the large literature in the field, generate 
-            a comprehensive map of research activity and findings, and enable evidence-based selection of materials for 
+    <p>The Database of Experimental Biomaterials and their Biological Effect (DEBBIE) is an open access database of
+            biomaterials, implants and medical devices automatically curated from the scientific literature. DEBBIE
+            was designed to facilitate a more efficient access to the large literature in the field, generate
+            a comprehensive map of research activity and findings, and enable evidence-based selection of materials for
             medical applications.
     </p>
   </div>
