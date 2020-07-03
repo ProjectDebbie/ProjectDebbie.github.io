@@ -65,14 +65,23 @@
     <!-- what are annotations Section -->
   <div class="w3-container w3-padding-16 w3-white" id="about" >
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">What are annotations?</h2>
-    <p>Automated text annotation is a Natural Language Processing (NLP) technique that identifies and extracts relevant concepts hidden within large collections of textual data through computational approaches. In DEBBIE, annotations are performed using the <b>Biomaterials Annotator</b>, an instrument combining several open lexical resource and built using the <a href="https://gate.ac.uk/">General Architecture of Text Engineering (GATE)</a> software and the <a href="https://stanfordnlp.github.io/CoreNLP/">Stanford Core Natural Language Processing (CoreNLP)</a> framework. Below is an example of an annotated abstract in GATE, with identified terms labeled with their respective categories.
+    <p>Automated text annotation is a Natural Language Processing (NLP) technique that identifies and extracts relevant concepts hidden within large collections of textual data through computational approaches. In DEBBIE, annotations are performed using the <a href="https://github.com/ProjectDebbie/Biomaterials_annotator">Biomaterials Annotator</a>, an instrument combining several open lexical resource and built using the <a href="https://gate.ac.uk/">General Architecture of Text Engineering (GATE)</a> software and the <a href="https://stanfordnlp.github.io/CoreNLP/">Stanford Core Natural Language Processing (CoreNLP)</a> framework. Below is an example of an annotated abstract in GATE, with identified terms labeled with their respective categories.
     </p>
     <br>
     <center><img class="w3-image w3-center" src="images/annotation_example.png" alt="Pipeline" width="900" height="450"></center>
   </div>
 <!-- quick start Section -->
-  <div class="w3-container w3-padding-16 w3-white" id="about" >
+<div class="w3-container w3-padding-16 w3-white" id="about" >
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Quick Start</h2>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Search</h3>
+    <p>
+      <ol class="list" style="padding-left: 100px;">
+        <li> Enter a single term into the search field on the <a href="http://debbie.bsc.es/search/">DEBBIE homepage</a> and click the Submit Query button in order to begin the search. <br>
+        Example of search terms: Fibroin, Encapsulation, Bone </li>
+        <li>The search results page contains a quick summary, showing mentions of the term over the years, other commonly associated terms and the study types where your search term has appeared.</li>
+        <li>Below the quick summary, there are optional annotation categories. Select the categories you wish to explore further, and a drop down box will appear with further information, such as associated top terms. </li>
+      </ol>
+    </p>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Annoation Categories</h3>
     <table class="w3-table w3-bordered w3-border w3-centered w3-striped">
     <tr>
@@ -123,12 +132,12 @@
     <tr>
       <td>Adverse Effects</td>
       <td>An unfavorable or unintended disease, sign, or symptom (including an abnormal laboratory finding) that is temporally associated with the use of a medical device or biomaterial</td>
-      <td><i>Adhesion Formation, Cytotoxicity, Inflammatory reaction</i></td>
+      <td><i>Cytotoxicity, Inflammatory reaction, Abscesses</i></td>
     </tr>
      <tr>
       <td>Biological Active Substance</td>
       <td>Substance included in a manufactured object in order to impart a biological activity</td>
-      <td><i>Collagen, Heparin, Human Derived Matrix</i></td>
+      <td><i>Collagen, Heparin, RGD</i></td>
     </tr>
      <tr>
       <td>Study Type</td>
@@ -148,12 +157,12 @@
     <tr>
       <td>Animal Model</td>
       <td>The species and /or breed of animal used in the study</td>
-      <td><i>Human, Rabbit, Mouse</i></td>
+      <td><i>Rat, Rabbit, Mouse</i></td>
     </tr>
     <tr>
       <td>Research Technique</td>
       <td>The reported laboratory technique used in an experimental study</td>
-      <td><i>Ultrasound biomicroscope, FLIM, Centrifuge</i></td>
+      <td><i>Scanning electron microscope, High Performance Liquid Chromatography  </i></td>
     </tr>
     </table>
     <br>
@@ -244,11 +253,10 @@
     </table>
     <br>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Citing DEBBIE</h3>
-    <p>The Database of Experimental Biomaterials and their Biological Effect (DEBBIE) is an open access database of
-            biomaterials, implants and medical devices automatically curated from the scientific literature. DEBBIE
-            was designed to facilitate a more efficient access to the large literature in the field, generate
-            a comprehensive map of research activity and findings, and enable evidence-based selection of materials for
-            medical applications.
+    <p>McKitrick A, Corvi J and Hakimi O.  Manuscript in preparation (2020)
+    </p>
+    <p>Hakimi O, Gelpi JL, Krallinger M, Curi F, Repchevsky D and Ginebra MP. The devices, experimental scaffolds, and biomaterials ontology (deb): A tool for mapping,
+annotation, and analysis of biomaterials’ data. Adv. Funct. Mater. (2020)
     </p>
   </div>
 <!-- End of overall container below -->
