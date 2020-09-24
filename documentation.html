@@ -85,13 +85,14 @@
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">DEBBIE's RESTful API</h3>
     <p>
       <ol class="list" style="padding-left: 100px;">
-        <li>Users can access the contents of DEBBIE through the RESTful API located at <a href="http://debbie.bsc.es/search/rest"><u>http://debbie.bsc.es/search/rest</u></a></li>
+        <li>The contents of DEBBIE are programmatically accessible through the RESTful API located at <a href="http://debbie.bsc.es/search/rest"><u>http://debbie.bsc.es/search/rest</u></a></li>
         <li>Users can submit searches through the RESTful API using the following format: http://debbie.bsc.es/search/rest/[term]<br>
         For example: <br>
         http://debbie.bsc.es/search/rest/mesh<br>
         http://debbie.bsc.es/search/rest/pdo<br>
         http://debbie.bsc.es/search/rest/scaffolds
         </li>
+        <li>The results of the RESTful API are paginated to contain 30 records per page. Once the results are displayed, users can navigate through the pages using http://debbie.bsc.es/search/rest/?offset=[XX]</li>
       </ol>
     </p>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Annoation Categories</h3>
