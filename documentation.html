@@ -39,7 +39,6 @@
       <a href="https://projectdebbie.github.io/#about" class="w3-bar-item w3-button w3-padding-16" style="text-decoration:none">About</a>
       <a href="https://projectdebbie.github.io/#ontology" class="w3-bar-item w3-button w3-padding-16" style="text-decoration:none">Ontology</a>
       <a href="https://projectdebbie.github.io/#database" class="w3-bar-item w3-button w3-padding-16" style="text-decoration:none">Database</a>
-      <a href="https://projectdebbie.github.io/#database" class="w3-bar-item w3-button w3-padding-16" style="text-decoration:none">Rest Api</a>
       <a href="https://projectdebbie.github.io/documentation.html" class="w3-bar-item w3-button w3-padding-16" style="text-decoration:none">Documentation</a>
       <a href="https://projectdebbie.github.io/#research" class="w3-bar-item w3-button w3-padding-16" style="text-decoration:none">Research</a>
       <a href="https://projectdebbie.github.io/#team" class="w3-bar-item w3-button w3-padding-16" style="text-decoration:none">Team</a>
@@ -87,11 +86,48 @@
     <p>
       <ol class="list" style="padding-left: 100px;">
         <li>The contents of DEBBIE are programmatically accessible through the RESTful API located at <a href="http://debbie.bsc.es/search/rest"><u>http://debbie.bsc.es/search/rest</u></a></li>
-        <li>Users can submit searches through the RESTful API using the following format: http://debbie.bsc.es/search/rest/[term]<br>
-        For example: <br>
-        http://debbie.bsc.es/search/rest/mesh<br>
-        http://debbie.bsc.es/search/rest/pdo<br>
-        http://debbie.bsc.es/search/rest/scaffolds
+        <li>Users can submit different searches through the RESTful API: <br>
+        Returns the frequency of usage of the term of interest over time, normalized per abstract: <br>
+        https://debbie.bsc.es/search/api/v1/search/<term>/years<br>
+                
+        Returns the thirteen most frequently annotated terms that are associated (co-occur) with the term of interest in different abstracts: <br>
+        https://debbie.bsc.es/search/api/v1/search/<term>/top_terms<br>
+        
+                
+        Returns the thirteen most frequently annotated terms that co-occurs with term of interest within a particular category: <br>
+        https://debbie.bsc.es/search/api/v1/search/<term>/top_terms/<type><br>
+        
+        Category possible values (type):
+
+                 Biomaterial
+
+                 Biomaterial Types
+
+                 Biologically Active Substance
+
+                 Manufactured Object
+
+                 Manufactured Object Component
+
+                 Medical Application, Disease or condition  
+
+                 Manufactured Object Features
+
+                 Structure
+
+                 Associated Biological Process
+
+                 Material Processing
+
+                 Cell
+
+                 Species
+
+                 Tissue        
+       
+         Returns network that described the relationships between the term of interest as well as the associated terms.: <br>
+         https://debbie.bsc.es/search/api/v1/search/<term>/network<br>
+                
         </li>
         <li>The results of the RESTful API are paginated to contain 30 records per page. Once the results are displayed, users can navigate through the pages using http://debbie.bsc.es/search/rest/?offset=[XX]</li>
       </ol>
