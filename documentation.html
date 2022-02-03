@@ -17,6 +17,14 @@
           list-style: none;
           text-decoration:none;
         }
+        
+        .class {
+          flex-wrap: wrap;
+          display: flex;
+          font-family: Tahoma, Geneva, sans-serif;
+          color: blue;
+        }
+        
         p {
           font-family: Tahoma, Geneva, sans-serif;
         }
@@ -88,7 +96,7 @@
         <li>The contents of DEBBIE are programmatically accessible through the RESTful API located at <a href="http://debbie.bsc.es/search/api/v1"><u>http://debbie.bsc.es/search/api/v1</u></a></li>
         <br>
         <li>Users can submit different searches through the RESTful API: <br><br>
-        <ol class="list" style="padding-left: 50px;">
+        <ul class="list_api" style="padding-left: 50px;">
         <li>        
         Returns the frequency of usage of the term of interest over time, normalized per abstract: <br>
         https://debbie.bsc.es/search/api/v1/search/[term]/years<br>
@@ -129,7 +137,7 @@
          </li><br>
          <li>Returns network that described the relationships between the term of interest as well as the associated terms.: <br>
          https://debbie.bsc.es/search/api/v1/search/[term]/network<br></li>
-         <ol>       
+         <ul>       
         </li>
         
       </ol>
