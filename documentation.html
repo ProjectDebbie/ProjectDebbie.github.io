@@ -78,8 +78,8 @@
       <ol class="list" style="padding-left: 100px;">
         <li> Enter a single term into the search field on the <a href="http://debbie.bsc.es/search/">DEBBIE homepage</a> and click the Submit Query button in order to begin the search. <br>
         Example of search terms: Fibroin, Encapsulation, Bone </li>
-        <li>The search results page contains a quick summary, showing mentions of the term over the years, other commonly associated terms and the study types where your search term has appeared.</li>
-        <li>Below the quick summary, there are optional annotation categories. Select the categories you wish to explore further, and a drop down box will appear with further information, such as associated top terms. </li>
+        <br><li>The search results page contains a quick summary, showing mentions of the term over the years, other commonly associated terms and the study types where your search term has appeared.</li>
+        <br><li>Below the quick summary, there are optional annotation categories. Select the categories you wish to explore further, and a drop down box will appear with further information, such as associated top terms. </li>
       </ol>
     </p>
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">DEBBIE's RESTful API</h3>
@@ -87,17 +87,17 @@
       <ol class="list" style="padding-left: 100px;">
         <li>The contents of DEBBIE are programmatically accessible through the RESTful API located at <a href="http://debbie.bsc.es/search/api/v1"><u>http://debbie.bsc.es/search/api/v1</u></a></li>
         <br>
-        <li>Users can submit different searches through the RESTful API: <br>
+        <li>Users can submit different searches through the RESTful API: <br><br>
         <ol class="list" style="padding-left: 50px;">
         <li>        
         Returns the frequency of usage of the term of interest over time, normalized per abstract: <br>
         https://debbie.bsc.es/search/api/v1/search/[term]/years<br>
         </li>        
-        <li>
+        <li><br>
         Returns the thirteen most frequently annotated terms that are associated (co-occur) with the term of interest in different abstracts: <br>
         https://debbie.bsc.es/search/api/v1/search/[term]/top_terms<br>
         </li>
-        <li>        
+        <li><br>
         Returns the thirteen most frequently annotated terms that co-occurs with term of interest within a particular category: <br>
         https://debbie.bsc.es/search/api/v1/search/[term]/top_terms/[type]<br>
         
@@ -126,7 +126,7 @@
                  Species - ResearchTechnique
 
                  Tissue        
-         </li>
+         </li><br>
          <li>Returns network that described the relationships between the term of interest as well as the associated terms.: <br>
          https://debbie.bsc.es/search/api/v1/search/[term]/network<br></li>
          <ol>       
